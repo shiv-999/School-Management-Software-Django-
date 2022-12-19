@@ -1,0 +1,47 @@
+{% extends 'index.html' %}
+
+{% block chart1 %}Student info {% endblock chart1 %}
+
+{% block scripts %}
+<script>
+$(document).ready(function(){
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: [{% for item in qs %}'{{'item.RegNO'}}',{% endfor %}],
+          datasets: [{ 
+              data: [{% for item in qs %}{{item.District}}{% endfor %}],
+              label: "Total",
+              borderColor: "#3e95cd",
+              backgroundColor: "#7bb6dd",
+              fill: False,
+            }, { 
+              data: [70,90,44,60,83,90,100],
+              label: "Accepted",
+              borderColor: "#3cba9f",
+              backgroundColor: "#71d1bd",
+              fill: False,
+            }, { 
+              data: [10,21,60,44,17,21,17],
+              label: "Pending",
+              borderColor: "#ffa500",
+              backgroundColor:"#ffc04d",
+              fill: False,
+            }, { 
+              data: [6,3,2,2,7,0,16],
+              label: "Rejected",
+              borderColor: "#c45850",
+              backgroundColor:"#d78f89",
+              fill: False,
+            }
+          ]
+        },
+      });
+});
+</script>   
+{% endblock scripts %}
+
+{% block content %}
+<canvas id="myChart" width="400" height="400"></canvas>
+{% endblock content %}

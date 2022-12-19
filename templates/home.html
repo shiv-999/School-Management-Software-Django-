@@ -1,0 +1,86 @@
+{%load static%}
+<link
+rel='stylesheet'
+type='text/css'
+href="{%static 'Student_info/static/css/style.css'%}"
+/>
+
+<!doctype html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <title>List of persons</title>
+    </head>
+    
+    <body style="background-color:#CCEEFF;">
+      	<h1> <center>WELCOME TO SGGS TY IT</h1></center>
+    
+    	{% comment %} <img src="SGGS.jpeg" alt="SGGS College" width="450" height="400">   {% endcomment %}
+        <h3><center><i><font color="red">Developed By Python Creaters</font></i></h3></center>
+          
+          <body bgcolor="sky Blue"> 
+            <nav class="navbar bg-light">
+              <br>
+              <div class="container-fluid">
+                <center>
+                <a class="navbar-brand">
+                  {% load static %} <img src="{% static "Sudent_Faculty/media/sggs2.png"%}" alt="Logo" width="1370" height="470" class="d-inline-block align-text-top">
+                 {% comment %} <br> <b>Shri Guru Gobind Singhji Institude of Engineering and Technology</b>
+                 <br> Vishnupuri,Nanded(Maharashtra State) INDIA PIN 431606
+                  <br>Goverment Aided Autonomous Institude DTE code:2020
+                  <br>NAAC Accredited Institude GRADE B++, CGPA 2.91(2020-2025)
+                  <br><b> Vision Statement: Education of Human Power for Technological Excellence {% endcomment %}
+                </a></center>
+              </div>
+            
+            </nav>
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/Home/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/Student/">Student</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/Admission/">Admission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/Mark/">Marks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/Feedback/">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/register/">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/Login/">Login</a>
+              </li>
+              </div>
+              </div>
+            <div>
+                <marquee direction="left"  >Shri Guru Gobind Singhji Institude Of Engineering And Technology,Vishnupuri, Nanded &nbsp Shri Guru Gobind Singhji Institude Of Engineering And Technology,Vishnupuri, Nanded  &nbsp Shri Guru Gobind Singhji Institude Of Engineering And Technology,Vishnupuri Nanded &nbsp  Shri Guru Gobind Singhji Institude Of Engineering And Technology,Vishnupuri, Nanded &nbsp Shri Guru Gobind Singhji Institude Of Engineering And Technology,Vishnupuri, Nanded &nbsp Shri Guru Gobind Singhji Institude Of Engineering And Technology,Vishnupuri, Nanded             </marquee>
+               
+                <hr color="green">
+                <h3><center>Director</h3></center>
+                {% load static %} <p style="text-align:center;"><img src="{% static "Sudent_Faculty/media/Director.jpeg"%}" width="300" 
+                    height="300",class="center" />
+                    <b><center><h4>Dr. Y. V. Joshi</h4></center></b>
+                <hr color="green">
+                
+            
+            </style>
+        </head>
+</body>
+
+
+          {% comment %} <a href="http://127.0.0.1:8000/Student/">Visit Student Information</a>
+          <a href="http://127.0.0.1:8000/Admission/">Visit Admission Information</a>
+          <a href="http://127.0.0.1:8000/Mark/">Visit Student Marks Information</a>
+          <a href="http://127.0.0.1:8000/Feedback/">Visit Student Feedback </a>
+          
+           {% endcomment %}
+           {% comment %} http://127.0.0.1:8000/Home/ {% endcomment %}
+
+    
+          

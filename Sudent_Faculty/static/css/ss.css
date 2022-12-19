@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+
+} shrink
+.item{     
+    flex: 1 1 100px;
+}               
